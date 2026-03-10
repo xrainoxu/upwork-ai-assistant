@@ -26,23 +26,40 @@ Scripts: Generate HTML report → Auto-open browser
 You: View results
 ```
 
-## Usage
+## Getting Started
 
-### 0. Update Your Profile
+Start Claude Code in your project directory:
 
-Paste your Upwork profile content and say:
+```bash
+claude
+```
 
-> "更新 profile，xxx"
+### 0. Sync Your Profile
 
-The AI will parse and store your profile for future analysis.
+1. Go to your Upwork profile page
+2. Copy all content from your profile
+3. Paste and send to Claude:
+
+```
+更新 profile，[paste your profile content here]
+```
+
+The AI will parse and store your profile locally for future analysis.
 
 ---
 
 ### 1. Screen Multiple Jobs
 
-Paste a list of job summaries and say:
+1. Go to Upwork **Find Works** page
+2. Switch to **Most Recent** or **Saved** jobs
+3. Copy the job list (select multiple jobs if supported)
+4. Paste and send to Claude:
 
-> "初筛这些 jobs"
+```
+初筛这些 jobs
+
+[paste job list here]
+```
 
 The AI will:
 - Parse job data (title, budget, client info, skills)
@@ -54,14 +71,31 @@ The AI will:
 
 ### 2. Analyze a Specific Job
 
-Paste a job's full details (including client history) and say:
+1. Open a job's detail page on Upwork
+2. Expand any collapsed sections (click "more..." if collapsed)
+3. Copy **all** content from the page (job description + client history)
+4. Paste and send to Claude:
 
-> "详细分析这个 job"
+```
+详细分析这个 job
+
+[paste full job details here]
+```
 
 The AI will:
 - Parse structured data
 - Deep analyze client history and reviews
 - Provide application recommendation + rate suggestion
+
+---
+
+## Data Privacy
+
+All data is stored **locally** in your project directory only:
+- `scripts/profile/data/my-profile.json`
+- `scripts/jobs/data/analyzed-jobs.json`
+
+**No data is sent to any external server.** Your profile and job data never leave your machine.
 
 ---
 
