@@ -41,7 +41,7 @@ claude
 3. Paste and send to Claude:
 
 ```
-更新 profile，[paste your profile content here]
+update profile, [paste your profile content here]
 ```
 
 The AI will parse and store your profile locally for future analysis.
@@ -56,7 +56,7 @@ The AI will parse and store your profile locally for future analysis.
 4. Paste and send to Claude:
 
 ```
-初筛这些 jobs
+screen these jobs
 
 [paste job list here]
 ```
@@ -77,7 +77,7 @@ The AI will:
 4. Paste and send to Claude:
 
 ```
-详细分析这个 job
+analyze this job in detail
 
 [paste full job details here]
 ```
