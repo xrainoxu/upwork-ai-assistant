@@ -1,0 +1,12 @@
+# Reports
+reports/
+
+# Test scripts
+test/
+
+# Personal data
+my-profile.json
+scripts/jobs/data/analyzed-jobs.json
+
+# Node.js
+node_modules/
